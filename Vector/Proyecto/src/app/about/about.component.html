@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Login</h1>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="name">Usuario</label>
+        <input type="text" class="form-control" id="name"
+               required
+               [(ngModel)]="data.name" name="name"
+               #name="ngModel">
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Clave</label>
+        <input type="password" class="form-control" id="pass"
+               required
+               [(ngModel)]="data.pass" name="pass"
+               >
+      </div>
+
+      <button type="submit" class="btn btn-success">Ingresar</button>
+
+    </form>
+</div>
+
+id = {{ rows.idusuarios}}
+usuario = {{ rows.user }}
